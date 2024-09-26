@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Notes Application</title>
-    <link rel="stylesheet" type="text/css" href="/style.css" />
     <link rel="stylesheet" href="/sanitize.css">
+    <link rel="stylesheet" type="text/css" href="/style.css" />
 </head>
-
 <body>
-    <nav>
-        <H1>My Notes Application</H1>
+    <nav class="nav">
+        <h1 class="nav__title">My Notes Application</h1>
     </nav>
-    <main>
+    <main class="main">
         <section class="content-wrapper">
-            <section class="note">
-                <h2>Create a new note</h2>
-                <form>
-                    <label for="title">Title:</label>
-                    <input type="text" id="title" name="title" placeholder="Enter the title">
-                    <label for="content">Content:</label>
-                    <textarea id="content" name="content" rows="10" cols="50" placeholder="Enter your note content"></textarea>
-                    <input type="submit" value="Add Note" class="form-button">
+            <article class="note">
+                <h2 class="note__title">Create a new note</h2>
+                <form class="note__form">
+                    <label for="note-title" class="note__label">Title:</label>
+                    <input type="text" id="note-title" name="title" class="note__input" placeholder="Enter the title">
+                    <label for="note-content" class="note__label">Content:</label>
+                    <textarea id="note-content" name="content" class="note__textarea" rows="8" cols="50"
+                        placeholder="Enter your note content"></textarea>
+                    <input type="submit" value="Add Note" class="form__button">
                 </form>
-            </section>
-            <section class="resources">
-                <h2>Resources</h2>
-                <div class="elements">
-                    <a href="">MDN Web Docs</a>
-                    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">css-tricks</a>
-                    <a href="">My Github</a>
+            </article>
+            <aside class="resources">
+                <h2 class="resources__title">Resources</h2>
+                <div class="resources__elements">
+                    <a href="" class="resources__link">MDN Web Docs</a>
+                    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+                        class="resources__link">css-tricks</a>
+                    <a href="" class="resources__link">My Github</a>
                 </div>
-            </section>
+            </aside>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 My Notes Application</p>
+    <footer class="footer">
+        <p class="footer__text">&copy; 2024 My Notes Application</p>
     </footer>
 </body>
-
 </html>
