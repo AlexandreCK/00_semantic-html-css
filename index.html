@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes Application</title>
+    <link rel="stylesheet" href="/sanitize.css">
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">My Notes Application</h1>
+    </header>
+    <main class="main">
+        <section class="content-wrapper">
+            <article class="note">
+                <h2 class="note__title">Create a new note</h2>
+                <form class="note__form">
+                    <label for="note-title" class="note__label">Title:</label>
+                    <input type="text" id="note-title" name="title" class="note__input" placeholder="Enter the title">
+                    <label for="note-content" class="note__label">Content:</label>
+                    <textarea id="note-content" name="content" class="note__textarea" rows="8" cols="50"
+                        placeholder="Enter your note content"></textarea>
+                    <input type="submit" value="Add Note" class="form__button">
+                </form>
+            </article>
+            <aside class="resources">
+                <h2 class="resources__title">Resources</h2>
+                <nav class="resources__elements">
+                    <a href="" class="resources__link">MDN Web Docs</a>
+                    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+                        class="resources__link">css-tricks</a>
+                    <a href="" class="resources__link">My Github</a>
+                <nav />
+            </aside>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">&copy; 2024 My Notes Application</p>
+    </footer>
+</body>
+
+</html>
